@@ -38,15 +38,31 @@
 				 * If square, add to myFaves, otherwise add to
 				 * theRest
 				 */
-				console.log(i);
 				
 				for(var i=0; i<4; i++){
-					console.log(i);
+					//console.log(i);
+					
 					var currentCookie = myCookies[i];
-					console.log(currentCookie);
+					//console.log(currentCookie);
 					
-					
-				}
+					if(currentCookie.shape == "square"){					
+						console.log(currentCookie);
+						
+						// because shape is square add the currentCookie
+						//to myFaves list
+						myFaves.push(currentCookie);
+					}else{
+						//otherwise, add the currentCookie to 
+						//theRest list
+						theRest.push(currentCookie);
+						
+					} // this is the end of my if/else statement
+				}//this is the end of my for loop
+				
+				console.log("finished lists");
+				console.log(myFaves);
+				console.log(theRest);
+				
 	
 
 
